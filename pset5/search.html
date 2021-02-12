@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search!</title>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector('#name').value; /* Get information from the tree called DOM . Without # the func() will think about the tag named name, not an id*/
+                alert("Hello " + name);
+            }
+        </script>
+    </head>
+    <body>
+        Search:
+        <!-- Submit this form to the url. get means get a webpage-->
+        <form onsubmit="greet(); return false;"> <!-- action="http://www.google.com/search" method="get" -->
+            <input type="text" autocomplete = "off" autofocus id="name"  /><!-- name="q" -->
+            <input type="submit" value="Search" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Manage Cash
+{% endblock %}
+
+{% block main %}
+<h5> Your current Cash Ballance is: ${{ cash }} </h5>
+<p>You can add more funds to your account using the form below:</p>
+<form action="/managecash" method="post">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="amount" placeholder="Enter amount" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Add</button>
+</form>
+{% endblock %}

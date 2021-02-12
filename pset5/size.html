@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Size!</title>
+    </head>
+    <body>
+        <select>
+            <option value="x-large">x-large</option>
+            <option value="large">large</option>
+            <option selected value="initial">initial</option>
+            <option value="small">small</option>
+            <option value="x-small">x-small</option>
+        </select>
+        <p>Lorem ipsum dolor!</p>
+        <script>
+            document.querySelector('select').onchange = function()
+            {
+                document.querySelector('body').style.fontSize = this.value; /* this - whatewer element on the webpage indused this funtciton to be called */
+            };
+        </script>
+    </body>
+</html>
